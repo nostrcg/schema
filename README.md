@@ -1,2 +1,52 @@
-# schema
-nostr web schema
+<div align="center">
+<h1>Nostr Schema</h1>
+</div>
+
+<div align="center">  
+Linked Data Nostr Schema
+</div>
+
+---
+
+<div align="center">
+<h4>Getting Started</h4>
+</div>
+
+---
+
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![npm](https://img.shields.io/npm/v/nostr-vocab)](https://npmjs.com/package/nostr-vocab)
+[![npm](https://img.shields.io/npm/dw/nostr-vocab.svg)](https://npmjs.com/package/nostr-vocab)
+[![Github Stars](https://img.shields.io/github/stars/webnostr/schema.svg)](https://github.com/webnostr/schema/)
+
+
+## ⚡️ Features
+
+---
+
+&nbsp;&nbsp;✓&nbsp; Self Documenting Nostr Schema  
+&nbsp;&nbsp;✓&nbsp; Compatible with Linked Data  
+&nbsp;&nbsp;✓&nbsp; JSON-LD  
+&nbsp;&nbsp;✓&nbsp; Compatible with FOAF, schema.org, vcard, activity streams, DID  
+
+## ✍️ Getting Started
+
+---
+
+### Introduction
+
+[Nostr Vocab](https://w3id.org/nostr) is a vocab for creating Linked Data with [nostr](https://github.com/nostr-protocol/nostr).  It is self documenting and allows link following, search, and documentation
+
+---
+
+## ⚖️ License
+
+This project is under the MIT License. See the [LICENSE](https://github.com/webnostr/user/blob/gh-pages/LICENSE) file for the full license text.
+
+---
+
+### Contacts
+
+* Melvin Carvalho <melvincarvalho@gmail.com> - GitHub: https://github.com/melvincarvalho
+

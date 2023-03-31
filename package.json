@@ -1,0 +1,25 @@
+{
+  "name": "nostr-vocab",
+  "version": "0.0.1",
+  "description": "Nostr Vocab for Linked Data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webnostr/schema.git"
+  },
+  "keywords": [
+    "nostr",
+    "vocab",
+    "linked",
+    "data"
+  ],
+  "author": "Melvin Carvalho <https://melvincarvalho.com/#me> (melvincarvalho@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webnostr/schema/issues"
+  },
+  "homepage": "https://github.com/webnostr/schema#readme"
+}
