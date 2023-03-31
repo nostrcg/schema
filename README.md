@@ -1,0 +1,2 @@
+# schema
+nostr web schema
