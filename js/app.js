@@ -15,7 +15,7 @@ function Ontology(props) {
 function Category(props) {
   return html`
           <div>
-            <h1>${props.label}</h1>
+            <h1 id="${props.label}">${props.label}</h1>
             <p>Comment: ${props.comment}</p>
             <p>Term status: ${props.termStatus}</p>
           </div>
@@ -63,7 +63,7 @@ function App() {
     ${properties.map(
       item => html`
               <${Category}
-                label="${item['http://www.w3.org/2000/01/rdf-schema#label']}"
+                 label="${item['http://www.w3.org/2000/01/rdf-schema#label']}"
                 comment=${item['http://www.w3.org/2000/01/rdf-schema#comment']}
                 termStatus=${item[
         'http://www.w3.org/2003/06/sw-vocab-status/ns#term_status'
