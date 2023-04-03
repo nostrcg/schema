@@ -1,0 +1,14 @@
+      body {
+        margin: 0;
+        margin: 2rem;
+        font-family: Arial, sans-serif;
+      }
+      #app {
+        margin: 2rem;
+      }
+      h1 {
+        color: #073642;
+      }
+      p {
+        color: #2aa198;
+      }

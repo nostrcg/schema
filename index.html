@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostr Vocabulary</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="application/ld+json" id="data">
+      [
+        {
+          "@id": "https://w3id.org/nostr#",
+          "@type": "http://www.w3.org/2002/07/owl#Ontology",
+          "http://purl.org/dc/elements/1.1/description": "Nostr vocabulary.",
+          "http://purl.org/dc/elements/1.1/title": "Nostr vocabulary"
+        },
+        {
+          "@id": "https://w3id.org/nostr#Event",
+          "@type": [
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
+          ],
+          "http://www.w3.org/2000/01/rdf-schema#comment": "An nostr event as lower case 64 character hex string.",
+          "http://www.w3.org/2000/01/rdf-schema#label": "Event",
+          "http://www.w3.org/2002/07/owl#equivalentClass": {
+            "@id": "http://purl.org/dc/terms/Event"
+          },
+          "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
+        },
+        {
+          "@id": "https://w3id.org/nostr#Relay",
+          "@type": [
+            "http://www.w3.org/2000/01/rdf-schema#Class",
+            "http://www.w3.org/2002/07/owl#Class"
+          ],
+          "http://www.w3.org/2000/01/rdf-schema#comment": "A nostr Relay as ws or wss URI.",
+          "http://www.w3.org/2000/01/rdf-schema#label": "Relay",
+          "http://www.w3.org/2002/07/owl#equivalentClass": {
+            "@id": "http://purl.org/dc/terms/Relay"
+          },
+          "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
+        }
+      ]
+    </script>
+  </head>
+
+  <script type="module" src="./js/app.js"></script>
+
+  <body></body>
+</html>
