@@ -30,6 +30,10 @@ function App() {
     item['@type'].includes('http://www.w3.org/2002/07/owl#Class')
   )
 
+  const properties = json.filter(item =>
+    item['@type'].includes('http://www.w3.org/1999/02/22-rdf-syntax-ns#Property')
+  )
+
   return html`
           <${Ontology}
             title=${ontology['http://purl.org/dc/elements/1.1/title']}
@@ -47,8 +51,28 @@ function App() {
         'http://www.w3.org/2003/06/sw-vocab-status/ns#term_status'
         ]}
               />
+
+
+              
             `
     )}
+
+    <hr />
+
+
+    ${properties.map(
+      item => html`
+              <${Category}
+                label="${item['http://www.w3.org/2000/01/rdf-schema#label']}"
+                comment=${item['http://www.w3.org/2000/01/rdf-schema#comment']}
+                termStatus=${item[
+        'http://www.w3.org/2003/06/sw-vocab-status/ns#term_status'
+        ]}
+              />
+              
+            `
+    )}
+
         `
 }
 

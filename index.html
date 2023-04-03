@@ -21,9 +21,6 @@
           ],
           "http://www.w3.org/2000/01/rdf-schema#comment": "An nostr event as lower case 64 character hex string.",
           "http://www.w3.org/2000/01/rdf-schema#label": "Event",
-          "http://www.w3.org/2002/07/owl#equivalentClass": {
-            "@id": "http://purl.org/dc/terms/Event"
-          },
           "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
         },
         {
@@ -34,8 +31,119 @@
           ],
           "http://www.w3.org/2000/01/rdf-schema#comment": "A nostr Relay as ws or wss URI.",
           "http://www.w3.org/2000/01/rdf-schema#label": "Relay",
-          "http://www.w3.org/2002/07/owl#equivalentClass": {
-            "@id": "http://purl.org/dc/terms/Relay"
+          "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
+        },
+        {
+          "@id": "https://w3id.org/nostr#pubkey",
+          "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+          ],
+          "http://www.w3.org/2000/01/rdf-schema#comment": "Nostr pubkey 64 char lower case hex.",
+          "http://www.w3.org/2000/01/rdf-schema#domain": {
+            "@id": "https://w3id.org/nostr#Event"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+            "@id": "https://w3id.org/nostr#"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#label": "pubkey",
+          "http://www.w3.org/2000/01/rdf-schema#range": {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+          },
+          "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
+        },
+        {
+          "@id": "https://w3id.org/nostr#created_at",
+          "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+          ],
+          "http://www.w3.org/2000/01/rdf-schema#comment": "created_at unix timestamp.",
+          "http://www.w3.org/2000/01/rdf-schema#domain": {
+            "@id": "https://w3id.org/nostr#Event"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+            "@id": "https://w3id.org/nostr#"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#label": "created_at",
+          "http://www.w3.org/2000/01/rdf-schema#range": {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+          },
+          "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
+        },
+        {
+          "@id": "https://w3id.org/nostr#kind",
+          "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+          ],
+          "http://www.w3.org/2000/01/rdf-schema#comment": "kind of event as an integer.",
+          "http://www.w3.org/2000/01/rdf-schema#domain": {
+            "@id": "https://w3id.org/nostr#Event"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+            "@id": "https://w3id.org/nostr#"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#label": "kind",
+          "http://www.w3.org/2000/01/rdf-schema#range": {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+          },
+          "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
+        },
+        {
+          "@id": "https://w3id.org/nostr#content",
+          "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+          ],
+          "http://www.w3.org/2000/01/rdf-schema#comment": "content of a note.",
+          "http://www.w3.org/2000/01/rdf-schema#domain": {
+            "@id": "https://w3id.org/nostr#Event"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+            "@id": "https://w3id.org/nostr#"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#label": "content",
+          "http://www.w3.org/2000/01/rdf-schema#range": {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+          },
+          "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
+        },
+        {
+          "@id": "https://w3id.org/nostr#tags",
+          "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+          ],
+          "http://www.w3.org/2000/01/rdf-schema#comment": "array of arrays containing nostr tags.",
+          "http://www.w3.org/2000/01/rdf-schema#domain": {
+            "@id": "https://w3id.org/nostr#Event"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+            "@id": "https://w3id.org/nostr#"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#label": "tags",
+          "http://www.w3.org/2000/01/rdf-schema#range": {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+          },
+          "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
+        },
+        {
+          "@id": "https://w3id.org/nostr#sig",
+          "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+          ],
+          "http://www.w3.org/2000/01/rdf-schema#comment": "Schnorr signature of an event.",
+          "http://www.w3.org/2000/01/rdf-schema#domain": {
+            "@id": "https://w3id.org/nostr#Event"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": {
+            "@id": "https://w3id.org/nostr#"
+          },
+          "http://www.w3.org/2000/01/rdf-schema#label": "sig",
+          "http://www.w3.org/2000/01/rdf-schema#range": {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
           },
           "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": "stable"
         }
