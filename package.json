@@ -1,6 +1,6 @@
 {
   "name": "nostr-vocab",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Nostr Vocab for Linked Data",
   "main": "index.js",
   "scripts": {
