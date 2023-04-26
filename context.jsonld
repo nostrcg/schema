@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "terms": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "nostr": "https://w3id.org/nostr#",
+    "Event": "nostr:Event",
+    "Relay": "nostr:Relay",
+    "pubkey": {
+      "@id": "nostr:pubkey",
+      "@type": "xsd:string"
+    },
+    "created_at": {
+      "@id": "nostr:created_at",
+      "@type": "xsd:integer"
+    },
+    "kind": {
+      "@id": "nostr:kind",
+      "@type": "xsd:integer"
+    },
+    "content": {
+      "@id": "nostr:content",
+      "@type": "xsd:string"
+    },
+    "tags": {
+      "@id": "nostr:tags",
+      "@type": "xsd:string"
+    },
+    "sig": {
+      "@id": "nostr:sig",
+      "@type": "xsd:string"
+    },
+    "Ontology": "owl:Ontology",
+    "Class": "rdfs:Class",
+    "ObjectProperty": "owl:ObjectProperty",
+    "Property": "rdf:Property",
+    "comment": "rdfs:comment",
+    "domain": "rdfs:domain",
+    "isDefinedBy": "rdfs:isDefinedBy",
+    "label": "rdfs:label",
+    "range": "rdfs:range",
+    "term_status": "terms:term_status",
+    "title": "dc:title",
+    "description": "dc:description"
+  }
+}
