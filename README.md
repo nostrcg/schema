@@ -38,11 +38,11 @@ Linked Data Nostr Schema
 
 [Nostr Vocab](https://w3id.org/nostr) is a vocab for creating Linked Data with [nostr](https://github.com/nostr-protocol/nostr).  It is self documenting and allows link following, search, and documentation
 
+---
+
 ### About Linked Data
 
 Linked data is a way of publishing and interlinking structured data on the web, allowing machines to easily interpret and process the information. It enables data to be easily connected and shared across different applications, platforms, and domains.
-
-One of the main benefits of linked data is that it allows for more efficient data discovery and retrieval. By using standard vocabularies and ontologies, linked data can help bridge the gap between different data sources and make it easier to find relevant information.
 
 ---
 
@@ -51,8 +51,4 @@ One of the main benefits of linked data is that it allows for more efficient dat
 This project is under the MIT License. See the [LICENSE](https://github.com/webnostr/user/blob/gh-pages/LICENSE) file for the full license text.
 
 ---
-
-### Contacts
-
-* Melvin Carvalho <melvincarvalho@gmail.com> - GitHub: https://github.com/melvincarvalho
 
