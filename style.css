@@ -96,3 +96,14 @@ h3 {
   font-size: 1.5rem;
   font-weight: normal;
 }
+
+.github-fork {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.github-fork img {
+  border: 0;
+}
