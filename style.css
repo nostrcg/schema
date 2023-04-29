@@ -1,14 +1,98 @@
-      body {
-        margin: 0;
-        margin: 2rem;
-        font-family: Arial, sans-serif;
-      }
-      #app {
-        margin: 2rem;
-      }
-      h1 {
-        color: #073642;
-      }
-      p {
-        color: #2aa198;
-      }
+/* Add the standard Docdash blue color */
+:root {
+  --docdash-blue: #4f9ee6;
+}
+
+h1,
+h2,
+h3,
+a {
+  color: var(--docdash-blue);
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+a:hover {
+  color: darken(var(--docdash-blue), 10%);
+}
+
+/* Add a utility function to darken the color */
+@function darken($color, $amount) {
+  @return mix(black, $color, $amount);
+}
+
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 300;
+  margin: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 20px 0;
+  color: #3a3a3a;
+  border-bottom: 1px solid #eee;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 20px 0;
+  color: #3a3a3a;
+}
+
+.comment {
+  font-style: italic;
+  color: #666;
+}
+
+.term_status {
+  font-weight: bold;
+}
+
+.property-block {
+  padding: 15px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.property-block > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.w3c-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.w3c-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.w3c-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+}

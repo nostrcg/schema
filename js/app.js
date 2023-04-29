@@ -13,9 +13,15 @@ function Ontology(props) {
 }
 
 function Category(props) {
+  function handleHeadingClick(e) {
+    e.preventDefault()
+    const id = e.target.id
+    window.history.pushState(null, null, `#${id}`)
+  }
+
   return html`
     <div>
-      <h1 id="${props.label}">${props.label}</h1>
+      <h1 id="${props.label}" onClick=${handleHeadingClick}>${props.label}</h1>
       <p>Comment: ${props.comment}</p>
       <p>Term status: ${props.termStatus}</p>
     </div>
@@ -31,32 +37,39 @@ function App() {
   )
 
   return html`
-    <${Ontology}
-      title=${ontology.title}
-      description=${ontology.description}
-    />
-    <hr />
-    ${items.map(
+    <header class="w3c-header">
+      <h1>Nostr W3C Community Group</h1>
+      <h2>Community Draft</h2>
+    </header>
+    <div class="container">
+      <${Ontology} title=${ontology.title} description=${ontology.description} />
+      <hr />
+      ${items.map(
     item => html`
-        <${Category}
-          label="${item.label}"
-          comment=${item.comment}
-          termStatus=${item['term_status']}
-        />
-      `
+          <div class="property-block">
+            <${Category}
+              label="${item.label}"
+              comment=${item.comment}
+              termStatus=${item.term_status}
+            />
+          </div>
+        `
   )}
 
-    <hr />
+      <hr />
 
-    ${properties.map(
+      ${properties.map(
     item => html`
-        <${Category}
-          label="${item.label}"
-          comment=${item.comment}
-          termStatus=${item.term_status}
-        />
-      `
+          <div class="property-block">
+            <${Category}
+              label="${item.label}"
+              comment=${item.comment}
+              termStatus=${item.term_status}
+            />
+          </div>
+        `
   )}
+    </div>
   `
 }
 
