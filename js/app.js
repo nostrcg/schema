@@ -1,19 +1,21 @@
 import { html, Component, render } from '../js/spux.js'
 import '../js/dior.js'
+import { version } from '../package.json'
 
 const json = di.data['@graph']
 
-function Ontology(props) {
+function Ontology (props) {
   return html`
     <div>
       <h1>${props.title}</h1>
-      <p>Description: ${props.description}</p>
+      <p>${props.description}</p>
+      <p style="font-style: italic;">Version: ${version}</p>
     </div>
   `
 }
 
-function Category(props) {
-  function handleHeadingClick(e) {
+function Category (props) {
+  function handleHeadingClick (e) {
     e.preventDefault()
     const id = e.target.id
     window.history.pushState(null, null, `#${id}`)
@@ -28,7 +30,7 @@ function Category(props) {
   `
 }
 
-function App() {
+function App () {
   const ontology = json.find(item => item['@type'] === 'owl:Ontology')
   const items = json.filter(item => item['@type'].includes('rdfs:Class'))
 
@@ -36,9 +38,13 @@ function App() {
     item['@type'].includes('rdfs:Property')
   )
 
+  const communityGroupUrl = 'https://www.w3.org/community/nostr/'
+
   return html`
     <header class="w3c-header">
-      <h1>Nostr W3C Community Group</h1>
+      <h1><a href="${communityGroupUrl}" target="_blank" rel="noopener noreferrer">W3C Nostr Community Group</a></h1>
+
+
       <h2>Community Draft</h2>
     </header>
     <div class="container">
