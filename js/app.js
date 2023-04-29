@@ -46,13 +46,14 @@ function App() {
   const communityGroupUrl = 'https://www.w3.org/community/nostr/'
 
   return html`
-  <a href="https://github.com/nostrcg" class="github-fork">
+  <a href="https://github.com/nostrcg" class="github-fork"></a>
+  <a href="https://github.com/you" class="github-fork">
   <img
     decoding="async"
     loading="lazy"
     width="149"
     height="149"
-    src="https://github.blog/wp-content/uploads/2008/12/forkme_left_white_ffffff.png?resize=149%2C149"
+    src="https://github.blog/wp-content/uploads/2008/12/forkme_right_white_ffffff.png?resize=149%2C149"
     class="attachment-full size-full"
     alt="Fork me on GitHub"
     data-recalc-dims="1"
