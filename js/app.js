@@ -46,8 +46,7 @@ function App() {
   const communityGroupUrl = 'https://www.w3.org/community/nostr/'
 
   return html`
-  <a href="https://github.com/nostrcg" class="github-fork"></a>
-  <a href="https://github.com/you" class="github-fork">
+  <a href="https://github.com/nostrcg" class="github-fork">
   <img
     decoding="async"
     loading="lazy"
@@ -58,7 +57,7 @@ function App() {
     alt="Fork me on GitHub"
     data-recalc-dims="1"
   />
-</a>
+  </a>
 
     <header class="w3c-header">
       <h1><a style="text-decoration: none" href="${communityGroupUrl}" target="_blank" rel="noopener noreferrer">W3C Nostr Community Group</a></h1>
