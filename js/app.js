@@ -1,10 +1,15 @@
 import { html, Component, render } from '../js/spux.js'
 import '../js/dior.js'
-import { version } from '../package.json'
 
 const json = di.data['@graph']
 
-function Ontology (props) {
+async function getVersion() {
+  const response = await fetch('https://nostrcg.github.io/schema/package.json')
+  const data = await response.json()
+  return data.version
+}
+
+function Ontology(props) {
   return html`
     <div>
       <h1>${props.title}</h1>
@@ -14,8 +19,8 @@ function Ontology (props) {
   `
 }
 
-function Category (props) {
-  function handleHeadingClick (e) {
+function Category(props) {
+  function handleHeadingClick(e) {
     e.preventDefault()
     const id = e.target.id
     window.history.pushState(null, null, `#${id}`)
@@ -30,7 +35,7 @@ function Category (props) {
   `
 }
 
-function App () {
+function App() {
   const ontology = json.find(item => item['@type'] === 'owl:Ontology')
   const items = json.filter(item => item['@type'].includes('rdfs:Class'))
 
@@ -42,7 +47,7 @@ function App () {
 
   return html`
     <header class="w3c-header">
-      <h1><a href="${communityGroupUrl}" target="_blank" rel="noopener noreferrer">W3C Nostr Community Group</a></h1>
+      <h1><a style="text-decoration: none" href="${communityGroupUrl}" target="_blank" rel="noopener noreferrer">W3C Nostr Community Group</a></h1>
 
 
       <h2>Community Draft</h2>
@@ -78,5 +83,8 @@ function App () {
     </div>
   `
 }
+
+var version = await getVersion()
+// console.log('version', version)
 
 render(html`<${App} />`, document.body)
