@@ -27,7 +27,7 @@
     },
     "tags": {
       "@id": "nostr:tags",
-      "@type": "xsd:string"
+      "@container": "@list"
     },
     "sig": {
       "@id": "nostr:sig",
