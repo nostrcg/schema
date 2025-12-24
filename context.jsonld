@@ -7,9 +7,19 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "terms": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
     "nostr": "https://w3id.org/nostr#",
+    "DIDNostr": "nostr:DIDNostr",
     "Event": "nostr:Event",
     "Relay": "nostr:Relay",
     "Person": "nostr:Person",
+    "profile": {
+      "@id": "nostr:profile",
+      "@type": "@id"
+    },
+    "follows": {
+      "@id": "nostr:follows",
+      "@type": "@id",
+      "@container": "@set"
+    },
     "pubkey": {
       "@id": "nostr:pubkey",
       "@type": "xsd:string"
