@@ -84,6 +84,13 @@
             "term_status": "stable"
           },
           {
+            "@id": "nostr:DIDNostr",
+            "@type": "rdfs:Class",
+            "comment": "A Nostr DID Document type.",
+            "label": "DIDNostr",
+            "term_status": "stable"
+          },
+          {
             "@id": "nostr:pubkey",
             "@type": ["rdfs:Property"],
             "comment": "Nostr pubkey 64 char lower case hex.",
@@ -272,6 +279,38 @@
             "label": "banner",
             "range": {
               "@id": "xsd:anyURI"
+            },
+            "term_status": "stable"
+          },
+          {
+            "@id": "nostr:profile",
+            "@type": ["rdfs:Property"],
+            "comment": "Profile metadata from kind 0 event.",
+            "domain": {
+              "@id": "nostr:DIDNostr"
+            },
+            "isDefinedBy": {
+              "@id": "nostr:"
+            },
+            "label": "profile",
+            "range": {
+              "@id": "owl:Thing"
+            },
+            "term_status": "stable"
+          },
+          {
+            "@id": "nostr:follows",
+            "@type": ["rdfs:Property"],
+            "comment": "Array of followed pubkeys from kind 3 event.",
+            "domain": {
+              "@id": "nostr:DIDNostr"
+            },
+            "isDefinedBy": {
+              "@id": "nostr:"
+            },
+            "label": "follows",
+            "range": {
+              "@id": "owl:Thing"
             },
             "term_status": "stable"
           }
