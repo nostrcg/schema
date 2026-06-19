@@ -297,6 +297,42 @@
       "term_status": "stable"
     },
     {
+      "@id": "nostr:nip05",
+      "@type": [
+        "rdfs:Property"
+      ],
+      "comment": "NIP-05 DNS-based internet identifier (e.g. name@example.com).",
+      "domain": {
+        "@id": "nostr:Person"
+      },
+      "isDefinedBy": {
+        "@id": "nostr:"
+      },
+      "label": "nip05",
+      "range": {
+        "@id": "xsd:string"
+      },
+      "term_status": "stable"
+    },
+    {
+      "@id": "nostr:lud16",
+      "@type": [
+        "rdfs:Property"
+      ],
+      "comment": "LUD-16 Lightning address (e.g. name@getalby.com).",
+      "domain": {
+        "@id": "nostr:Person"
+      },
+      "isDefinedBy": {
+        "@id": "nostr:"
+      },
+      "label": "lud16",
+      "range": {
+        "@id": "xsd:string"
+      },
+      "term_status": "stable"
+    },
+    {
       "@id": "nostr:profile",
       "@type": [
         "rdfs:Property"
