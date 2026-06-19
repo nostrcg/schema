@@ -68,6 +68,14 @@
       "@id": "nostr:banner",
       "@type": "xsd:anyURI"
     },
+    "nip05": {
+      "@id": "nostr:nip05",
+      "@type": "xsd:string"
+    },
+    "lud16": {
+      "@id": "nostr:lud16",
+      "@type": "xsd:string"
+    },
     "Ontology": "owl:Ontology",
     "Class": "rdfs:Class",
     "ObjectProperty": "owl:ObjectProperty",
