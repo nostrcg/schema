@@ -76,6 +76,10 @@
       "@id": "nostr:lud16",
       "@type": "xsd:string"
     },
+    "seeAlso": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id"
+    },
     "Ontology": "owl:Ontology",
     "Class": "rdfs:Class",
     "ObjectProperty": "owl:ObjectProperty",
