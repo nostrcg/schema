@@ -2,6 +2,7 @@
   "@context": {
     "@version": 1.1,
     "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -79,6 +80,10 @@
     "seeAlso": {
       "@id": "rdfs:seeAlso",
       "@type": "@id"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:dateTime"
     },
     "Ontology": "owl:Ontology",
     "Class": "rdfs:Class",
